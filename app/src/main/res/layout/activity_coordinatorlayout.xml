@@ -14,7 +14,7 @@
         android:text="Hello"
         app:layout_behavior="com.gy.amobile.person.coordinator.MyBehavior" />
 
-    <com.gy.amobile.demo.coordinator.TempView
+    <com.sunny.demo.coordinator.TempView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="300dp"

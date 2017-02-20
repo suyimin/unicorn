@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gy.amobile.demo">
+    package="com.sunny.demo">
 
     <application
-        android:name="com.gy.amobile.demo.ApplicationHelper"
+        android:name="com.sunny.demo.ApplicationHelper"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name="com.gy.amobile.demo.activity.MainActivity">
+        <activity android:name="com.sunny.demo.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.gy.amobile.demo.activity.SimpleActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.ListViewActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.XUtils3Activity" />
+        <activity android:name="com.sunny.demo.activity.SimpleActivity" />
+        <activity android:name="com.sunny.demo.activity.ListViewActivity" />
+        <activity android:name="com.sunny.demo.activity.XUtils3Activity" />
         <activity
-            android:name="com.gy.amobile.demo.activity.ForgetPwdActivity"
+            android:name="com.sunny.demo.activity.ForgetPwdActivity"
             android:theme="@style/PopTheme">
             <intent-filter>
                 <data
@@ -32,18 +32,18 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name="com.gy.amobile.demo.activity.DBActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.SQLActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.EventBusActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.GlideActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.FullscreenActivity" />
-        <activity android:name="com.gy.amobile.demo.activity.CoordinatorLayoutActivity" />
+        <activity android:name="com.sunny.demo.activity.DBActivity" />
+        <activity android:name="com.sunny.demo.activity.SQLActivity" />
+        <activity android:name="com.sunny.demo.activity.EventBusActivity" />
+        <activity android:name="com.sunny.demo.activity.GlideActivity" />
+        <activity android:name="com.sunny.demo.activity.FullscreenActivity" />
+        <activity android:name="com.sunny.demo.activity.CoordinatorLayoutActivity" />
         <activity
-            android:name="com.gy.amobile.demo.activity.PopActivity"
+            android:name="com.sunny.demo.activity.PopActivity"
             android:theme="@style/PopTheme" />
 
         <meta-data
-            android:name="com.gy.amobile.demo.glide.GiphyGlideModule"
+            android:name="com.sunny.demo.glide.GiphyGlideModule"
             android:value="GlideModule" />
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -55,10 +55,10 @@
             android:name="key_height"
             android:value="800" />
 
-        <activity android:name="com.gy.amobile.demo.activity.JavaActivity" />
+        <activity android:name="com.sunny.demo.activity.JavaActivity" />
 
         <service
-            android:name="com.gy.amobile.demo.service.InitializeService"
+            android:name="com.sunny.demo.service.InitializeService"
             android:exported="false"></service>
     </application>
 
