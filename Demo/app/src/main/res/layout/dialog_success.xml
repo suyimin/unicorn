@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="460px"
+    android:layout_height="270px">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/pop_bg_top">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="51px"
+            android:text="xxx"
+            android:textColor="#ffffff"
+            android:textSize="20px"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/iv_pop_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12px"
+            android:src="@mipmap/pop_close" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:background="@mipmap/pop_bg_middle">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="460px"
+        android:layout_height="208px"
+        android:layout_below="@id/iv_middle"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18px"
+            android:text="xxx"
+            android:textColor="#333333"
+            android:textSize="22px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="xxx"
+                android:textColor="#333333"
+                android:textSize="18px" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:src="@mipmap/choice" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8px"
+                android:textColor="#e50012"
+                android:textSize="18px" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="100px"
+            android:layout_height="46px"
+            android:layout_marginTop="34px"
+            android:background="@drawable/login_bg_selecter"
+            android:text="@string/confirm"
+            android:textColor="#ffffff"
+            android:textSize="22px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/pop_bg_bottom">
+
+    </RelativeLayout>
+</RelativeLayout>

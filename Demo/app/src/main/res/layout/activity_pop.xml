@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/pop_bg_top">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="51px"
+            android:text="xxx"
+            android:textColor="#ffffff"
+            android:textSize="20px"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/iv_pop_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12px"
+            android:src="@mipmap/pop_close" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:background="@mipmap/pop_bg_middle">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="460px"
+        android:layout_height="238px"
+        android:layout_below="@id/iv_middle"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="328px"
+            android:layout_height="102px"
+            android:layout_marginTop="18px"
+            android:background="@color/bg_text"
+            android:orientation="vertical">
+
+            <!-- 转出积分数 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="46px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="xxx"
+                    android:textColor="#999999"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/tv_pv_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:gravity="center_vertical"
+                    android:textColor="#e50012"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="290px"
+                android:layout_height="1px"
+                android:layout_marginLeft="19px"
+                android:layout_marginRight="19px"
+                android:background="#e6e6e5" />
+
+            <!-- 转入互生币账户数 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="xxx"
+                    android:textColor="#999999"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/tv_hsb_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:gravity="center_vertical"
+                    android:textColor="#e50012"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="116px"
+            android:layout_height="46px"
+            android:layout_marginTop="34px"
+            android:background="@drawable/login_bg_selecter"
+            android:text="xxx"
+            android:textColor="#ffffff"
+            android:textSize="22px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/pop_bg_bottom">
+
+    </RelativeLayout>
+</RelativeLayout>

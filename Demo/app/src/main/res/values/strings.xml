@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="please_input_company_res_no">请输入企业互生号</string>
+    <string name="please_input_email">请输入通过验证的邮箱</string>
+    <string name="confirm">确定</string>
+    <string name="please_input_true_company_res_no">请输入正确的11位企业互生号</string>
+    <string name="please_input_true_user_email">邮箱不正确!</string>
+</resources>

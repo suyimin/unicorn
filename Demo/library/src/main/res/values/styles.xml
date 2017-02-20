@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="HSHud" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <!-- <item name="android:windowBackground">@drawable/hshud_bg</item> -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="HSHudProgressBar">
+        　　<item name="android:minWidth">250dip</item>
+        　　<item name="android:maxWidth">250dip</item>
+        　　<item name="android:minHeight">250dip</item>
+        　　<item name="android:maxHeight">250dip</item>
+    </style>
+
+</resources>

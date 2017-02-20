@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list android:oneshot="false"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_01" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_02" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_03" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_04" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_05" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_06" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_07" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_08" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_09" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_10" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_11" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_12" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_13" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_14" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_15" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_16" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_17" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_18" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_19" />
+	<item android:duration="50" android:drawable="@mipmap/hs_loading_20" />
+
+</animation-list> 

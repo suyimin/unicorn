@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450px"
+    android:layout_height="150px"
+    android:background="@mipmap/dialog_bg">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15px"
+        android:textColor="#cccccc"
+        android:textSize="22px" />
+
+</RelativeLayout>
