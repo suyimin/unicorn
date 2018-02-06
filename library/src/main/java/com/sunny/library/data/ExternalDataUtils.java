@@ -2,6 +2,7 @@ package com.sunny.library.data;
 
 import android.content.Context;
 import android.text.TextUtils;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.sunny.library.data.entity.AddrInfo;
@@ -9,6 +10,7 @@ import com.sunny.library.data.table.ErrorCodeConsultedTable;
 import com.sunny.library.data.table.HSPubAreaTable;
 import com.sdk.db.table.DbModel;
 import com.sdk.util.LogUtil;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -34,7 +36,7 @@ public class ExternalDataUtils {
      */
     public static void init(final Context mContext) {
         String first = SharedPreferencesUtils.getStringData(mContext, KEY_FIRST); // 标识是为第一次启动
-        LogUtil.e("==init1================================"+first);
+        LogUtil.e("==init1================================" + first);
         if (TextUtils.isEmpty(first)) {
             LogUtil.e("==init2================================");
             new Thread(new Runnable() {
@@ -82,6 +84,8 @@ public class ExternalDataUtils {
 
     /**
      * 根据code获取地区信息
+     *
+     * @deprecated
      */
     public static AddrInfo getAddrInfo(Context mContext, String code) {
         AddrInfo info = null;
@@ -108,6 +112,8 @@ public class ExternalDataUtils {
 
     /**
      * 取得省份
+     *
+     * @deprecated
      */
     public static List<AddrInfo> getProviceList(Context mContext) {
         List<AddrInfo> info = new ArrayList<>();
@@ -130,6 +136,8 @@ public class ExternalDataUtils {
 
     /**
      * 获取城市列表
+     *
+     * @deprecated
      */
     public static List<AddrInfo> getCityList(Context mContext, String code) {
         List<AddrInfo> info = new ArrayList<>();
@@ -150,7 +158,7 @@ public class ExternalDataUtils {
     }
 
     /**
-     * 根据城市编码获取城市名
+     * 根据城市编码获取地区信息
      *
      * @param code
      * @return

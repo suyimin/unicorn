@@ -26,7 +26,9 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
+/**
+ * 根据getMapPerm.txt里面的配置信息生成表格
+ */
 public class ListViewActivity extends BaseActivity {
 
     @BindView(R.id.ll_middle2)
@@ -34,9 +36,13 @@ public class ListViewActivity extends BaseActivity {
     @BindView(R.id.sv_middle)
     ScrollView svMiddle;
 
-    //当前系统缺省角色和权限配置列表
+    /**
+     * 当前系统缺省角色和权限配置列表
+     */
     private List<PlatformListData> mData;
-    //当前所有角色列表
+    /**
+     * 当前所有角色列表
+     */
     private List<AsRole> mRole;
     //
     private List<ItemAdapter> mAdapter;

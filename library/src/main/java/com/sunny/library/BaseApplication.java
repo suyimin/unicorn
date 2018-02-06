@@ -9,6 +9,9 @@ import com.sdk.x;
 
 public class BaseApplication extends Application {
 
+    /**
+     * 随机生成加密过的Key，用于Router跳转时校验，防止其它应用打开我们的Activity。
+     */
     public static String urlKey;
 
     @Override
