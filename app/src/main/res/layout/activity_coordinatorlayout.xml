@@ -12,7 +12,7 @@
         android:layout_marginTop="300dp"
         android:background="#FFCC00"
         android:text="Hello"
-        app:layout_behavior="com.gy.amobile.person.coordinator.MyBehavior" />
+        app:layout_behavior="com.sunny.demo.coordinator.MyBehavior" />
 
     <com.sunny.demo.coordinator.TempView
         android:layout_width="100dp"
