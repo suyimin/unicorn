@@ -1,6 +1,6 @@
 package com.sunny.library.http;
 
-import com.sdk.common.Callback;
+import com.xdroid.common.Callback;
 
 public class HttpProgressCallBack<ResultType> implements Callback.ProgressCallback<ResultType> {
 

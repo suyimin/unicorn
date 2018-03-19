@@ -2,7 +2,7 @@ package com.sunny.library.adaptive.attr;
 
 import android.view.View;
 import com.sunny.library.adaptive.utils.AutoUtils;
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 
 public abstract class AutoAttr {

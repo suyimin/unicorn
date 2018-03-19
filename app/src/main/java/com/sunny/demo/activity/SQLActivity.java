@@ -14,7 +14,7 @@ import com.sunny.demo.bean.CAreaEntity;
 import com.sunny.demo.bean.HandlerBean;
 import com.sunny.demo.bean.NAreaEntity;
 import com.sunny.demo.util.DBHelper;
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;

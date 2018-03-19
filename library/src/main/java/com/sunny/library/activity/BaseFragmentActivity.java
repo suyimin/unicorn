@@ -7,8 +7,8 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.sunny.library.App;
-import com.sdk.activity.AppActivityManager;
-import com.sdk.activity.IActivity;
+import com.xdroid.activity.AppActivityManager;
+import com.xdroid.activity.IActivity;
 import com.sunny.library.adaptive.AdaptiveFragmentActivity;
 
 public abstract class BaseFragmentActivity extends AdaptiveFragmentActivity implements IActivity {

@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.google.zxing.client.android.CaptureActivity;
 import com.sunny.library.activity.BaseActivity;
 import com.sunny.demo.R;
-import com.sdk.activity.AppActivityManager;
+import com.xdroid.activity.AppActivityManager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

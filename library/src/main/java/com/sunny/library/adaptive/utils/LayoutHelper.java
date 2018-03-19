@@ -25,7 +25,7 @@ import com.sunny.library.adaptive.attr.PaddingTopAttr;
 import com.sunny.library.adaptive.attr.TextSizeAttr;
 import com.sunny.library.adaptive.attr.WidthAttr;
 import com.sunny.library.adaptive.config.LayoutConifg;
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 public class LayoutHelper
 {

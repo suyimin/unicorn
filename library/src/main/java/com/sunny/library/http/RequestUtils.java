@@ -3,11 +3,11 @@ package com.sunny.library.http;
 import android.content.Context;
 
 import com.alibaba.fastjson.JSON;
-import com.sdk.common.Callback.Cancelable;
-import com.sdk.http.HttpMethod;
-import com.sdk.http.RequestParams;
-import com.sdk.util.LogUtil;
-import com.sdk.x;
+import com.xdroid.common.Callback.Cancelable;
+import com.xdroid.http.HttpMethod;
+import com.xdroid.http.RequestParams;
+import com.xdroid.util.LogUtil;
+import com.xdroid.x;
 
 import java.util.Map;
 

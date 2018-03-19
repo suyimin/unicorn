@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.sunny.library.data.ExternalDataUtils;
 import com.sunny.library.router.KeyUtil;
-import com.sdk.x;
+import com.xdroid.x;
 
 
 public class BaseApplication extends Application {

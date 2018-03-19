@@ -1,7 +1,7 @@
 package com.sunny.library.data.table;
 
-import com.sdk.db.annotation.Column;
-import com.sdk.db.annotation.Table;
+import com.xdroid.db.annotation.Column;
+import com.xdroid.db.annotation.Table;
 
 /**
  * 错误码对照表

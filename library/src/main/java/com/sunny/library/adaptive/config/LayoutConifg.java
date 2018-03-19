@@ -5,7 +5,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 
 import com.sunny.library.adaptive.utils.ScreenUtils;
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 
 public class LayoutConifg {

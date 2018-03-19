@@ -1,7 +1,7 @@
 package com.sunny.library;
 
 
-import com.sdk.util.StringUtils;
+import com.xdroid.util.StringUtils;
 
 public class HsRegex {
 

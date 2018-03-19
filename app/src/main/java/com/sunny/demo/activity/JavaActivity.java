@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.sunny.demo.R;
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;

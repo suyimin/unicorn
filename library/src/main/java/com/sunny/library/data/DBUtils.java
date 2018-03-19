@@ -2,14 +2,14 @@ package com.sunny.library.data;
 
 import android.app.Application;
 
-import com.sdk.DbManager;
-import com.sdk.common.util.KeyValue;
-import com.sdk.db.sqlite.SqlInfo;
-import com.sdk.db.sqlite.WhereBuilder;
-import com.sdk.db.table.DbModel;
-import com.sdk.ex.DbException;
-import com.sdk.util.LogUtil;
-import com.sdk.x;
+import com.xdroid.DbManager;
+import com.xdroid.common.util.KeyValue;
+import com.xdroid.db.sqlite.SqlInfo;
+import com.xdroid.db.sqlite.WhereBuilder;
+import com.xdroid.db.table.DbModel;
+import com.xdroid.ex.DbException;
+import com.xdroid.util.LogUtil;
+import com.xdroid.x;
 
 import java.util.List;
 

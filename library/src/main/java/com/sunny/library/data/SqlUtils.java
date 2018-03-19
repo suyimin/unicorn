@@ -3,7 +3,7 @@ package com.sunny.library.data;
 import android.content.Context;
 import android.text.TextUtils;
 import com.sunny.library.R;
-import com.sdk.db.table.DbModel;
+import com.xdroid.db.table.DbModel;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

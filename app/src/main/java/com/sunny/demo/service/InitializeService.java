@@ -4,7 +4,7 @@ import android.app.IntentService;
 import android.content.Context;
 import android.content.Intent;
 
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 public class InitializeService extends IntentService {
 

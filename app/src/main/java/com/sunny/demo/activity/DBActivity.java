@@ -13,7 +13,7 @@ import com.sunny.library.data.ExternalDataUtils;
 import com.sunny.library.data.SharedPreferencesUtils;
 import com.sunny.library.data.entity.AddrInfo;
 import com.sunny.demo.R;
-import com.sdk.util.LogUtil;
+import com.xdroid.util.LogUtil;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.sunny.library.http;
 
-import com.sdk.common.Callback;
+import com.xdroid.common.Callback;
 
 public class HttpCodeCallBack<ResultType> implements Callback.CommonCallback<ResultType> {
 

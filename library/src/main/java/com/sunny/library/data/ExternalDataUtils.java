@@ -8,8 +8,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.sunny.library.data.entity.AddrInfo;
 import com.sunny.library.data.table.ErrorCodeConsultedTable;
 import com.sunny.library.data.table.HSPubAreaTable;
-import com.sdk.db.table.DbModel;
-import com.sdk.util.LogUtil;
+import com.xdroid.db.table.DbModel;
+import com.xdroid.util.LogUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;
