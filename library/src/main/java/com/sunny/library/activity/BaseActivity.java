@@ -7,12 +7,11 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.sunny.library.adaptive.AdaptiveActivity;
 import com.sunny.library.App;
 import com.xdroid.activity.AppActivityManager;
 import com.xdroid.activity.IActivity;
 
-public abstract class BaseActivity extends AdaptiveActivity implements IActivity {
+public abstract class BaseActivity extends Activity implements IActivity {
 
     public Activity aty;
 

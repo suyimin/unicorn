@@ -1,1 +1,1 @@
-include ':app', ':sdk', ':pulltorefresh', ':zxing', ':library'
+include ':app', ':sdk', ':library'

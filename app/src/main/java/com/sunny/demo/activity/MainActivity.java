@@ -10,7 +10,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.zxing.client.android.CaptureActivity;
 import com.sunny.library.activity.BaseActivity;
 import com.sunny.demo.R;
 import com.xdroid.activity.AppActivityManager;
@@ -65,7 +64,6 @@ public class MainActivity extends BaseActivity {
                 showActivity(aty, ListViewActivity.class);
                 break;
             case R.id.btn_4:
-                showActivity(aty, CaptureActivity.class);
                 break;
             case R.id.btn_5:
                 showActivity(aty, XUtils3Activity.class);

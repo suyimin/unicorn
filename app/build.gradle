@@ -25,7 +25,5 @@ repositories { flatDir { dirs 'libs' } }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile(name: 'butterknife', ext: 'aar')
-    compile project(':pulltorefresh')
-    compile project(':zxing')
     compile project(':library')
 }

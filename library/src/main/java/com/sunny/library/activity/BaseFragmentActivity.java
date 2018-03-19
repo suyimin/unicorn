@@ -3,15 +3,15 @@ package com.sunny.library.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.sunny.library.App;
 import com.xdroid.activity.AppActivityManager;
 import com.xdroid.activity.IActivity;
-import com.sunny.library.adaptive.AdaptiveFragmentActivity;
 
-public abstract class BaseFragmentActivity extends AdaptiveFragmentActivity implements IActivity {
+public abstract class BaseFragmentActivity extends FragmentActivity implements IActivity {
 
     public Activity aty;
 

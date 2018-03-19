@@ -45,15 +45,6 @@
         <meta-data
             android:name="com.sunny.demo.glide.GiphyGlideModule"
             android:value="GlideModule" />
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="DhNxS47YIr3CNdocGoAcy1ts" />
-        <meta-data
-            android:name="key_width"
-            android:value="1280" />
-        <meta-data
-            android:name="key_height"
-            android:value="800" />
 
         <activity android:name="com.sunny.demo.activity.JavaActivity" />
 
