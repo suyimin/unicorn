@@ -12,6 +12,7 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
+import android.os.Build;
 
 import com.xdroid.cache.DiskCacheEntity;
 import com.xdroid.cache.DiskCacheFile;
@@ -20,7 +21,6 @@ import com.xdroid.common.Callback;
 import com.xdroid.common.task.PriorityExecutor;
 import com.xdroid.common.util.IOUtil;
 import com.xdroid.util.LogUtil;
-import com.xdroid.webp.WebPFactory;
 import com.xdroid.x;
 
 import java.io.BufferedInputStream;
@@ -50,6 +50,9 @@ public final class ImageDecoder {
 
     private final static Executor THUMB_CACHE_EXECUTOR = new PriorityExecutor(1, true);
     private final static LruDiskCache THUMB_CACHE = LruDiskCache.getDiskCache("xUtils_img_thumb");
+
+    // 4.2.1+ 对于webp是完全支持的(包含半透明的webp图)
+    private static final boolean supportWebP = Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN;
 
     static {
         int cpuCount = Runtime.getRuntime().availableProcessors();
@@ -158,21 +161,6 @@ public final class ImageDecoder {
         return false;
     }
 
-    public static boolean isWebP(File file) {
-        FileInputStream in = null;
-        try {
-            in = new FileInputStream(file);
-            byte[] header = IOUtil.readBytes(in, 8, 4);
-            return Arrays.equals(WEBP_HEADER, header);
-        } catch (Throwable ex) {
-            LogUtil.e(ex.getMessage(), ex);
-        } finally {
-            IOUtil.closeQuietly(in);
-        }
-
-        return false;
-    }
-
     /**
      * 转化文件为Bitmap, 更好的支持WEBP.
      *
@@ -237,13 +225,8 @@ public final class ImageDecoder {
             }
 
             // decode file
-            Bitmap bitmap = null;
-            if (isWebP(file)) {
-                bitmap = WebPFactory.decodeFile(file.getAbsolutePath(), bitmapOps);
-            }
-            if (bitmap == null) {
-                bitmap = BitmapFactory.decodeFile(file.getAbsolutePath(), bitmapOps);
-            }
+            Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath(), bitmapOps);
+
             if (bitmap == null) {
                 throw new IOException("decode image error");
             }
@@ -589,24 +572,6 @@ public final class ImageDecoder {
     }
 
     /**
-     * 压缩bitmap, 更好的支持webp.
-     *
-     * @param bitmap
-     * @param format
-     * @param quality
-     * @param out
-     * @throws IOException
-     */
-    public static void compress(Bitmap bitmap, Bitmap.CompressFormat format, int quality, OutputStream out) throws IOException {
-        if (format == Bitmap.CompressFormat.WEBP) {
-            byte[] data = WebPFactory.encodeBitmap(bitmap, quality);
-            out.write(data);
-        } else {
-            bitmap.compress(format, quality, out);
-        }
-    }
-
-    /**
      * 根据文件的修改时间和图片的属性保存缩略图
      *
      * @param file
@@ -614,8 +579,6 @@ public final class ImageDecoder {
      * @param thumbBitmap
      */
     private static void saveThumbCache(File file, ImageOptions options, Bitmap thumbBitmap) {
-        if (!WebPFactory.available()) return;
-
         DiskCacheEntity entity = new DiskCacheEntity();
         entity.setKey(
                 file.getAbsolutePath() + "@" + file.lastModified() + options.toString());
@@ -625,8 +588,7 @@ public final class ImageDecoder {
             cacheFile = THUMB_CACHE.createDiskCacheFile(entity);
             if (cacheFile != null) {
                 out = new FileOutputStream(cacheFile);
-                byte[] encoded = WebPFactory.encodeBitmap(thumbBitmap, 80);
-                out.write(encoded);
+                thumbBitmap.compress(supportWebP ? Bitmap.CompressFormat.WEBP : Bitmap.CompressFormat.PNG, 80, out);
                 out.flush();
                 cacheFile = cacheFile.commit();
             }
@@ -647,7 +609,6 @@ public final class ImageDecoder {
      * @return
      */
     private static Bitmap getThumbCache(File file, ImageOptions options) {
-        if (!WebPFactory.available()) return null;
 
         DiskCacheFile cacheFile = null;
         try {
@@ -659,7 +620,7 @@ public final class ImageDecoder {
                 bitmapOps.inPurgeable = true;
                 bitmapOps.inInputShareable = true;
                 bitmapOps.inPreferredConfig = Bitmap.Config.ARGB_8888;
-                return WebPFactory.decodeFile(cacheFile.getAbsolutePath(), bitmapOps);
+                return BitmapFactory.decodeFile(cacheFile.getAbsolutePath(), bitmapOps);
             }
         } catch (Throwable ex) {
             LogUtil.w(ex.getMessage(), ex);

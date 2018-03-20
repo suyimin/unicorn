@@ -7,7 +7,7 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 import com.sunny.demo.R;
-import com.sunny.library.activity.BaseActivity;
+import com.xdroid.library.activity.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

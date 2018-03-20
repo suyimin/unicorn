@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import com.sunny.library.activity.BaseActivity;
-import com.sunny.library.data.ExternalDataUtils;
-import com.sunny.library.data.SharedPreferencesUtils;
-import com.sunny.library.data.entity.AddrInfo;
+import com.xdroid.library.activity.BaseActivity;
+import com.xdroid.library.data.ExternalDataUtils;
+import com.xdroid.library.data.SharedPreferencesUtils;
+import com.xdroid.library.data.entity.AddrInfo;
 import com.sunny.demo.R;
 import com.xdroid.util.LogUtil;
 
@@ -21,8 +21,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.sunny.library.data.ExternalDataUtils.KEY_FIRST;
-import static com.sunny.library.data.ExternalDataUtils.VAL_FLAG;
+import static com.xdroid.library.data.ExternalDataUtils.KEY_FIRST;
+import static com.xdroid.library.data.ExternalDataUtils.VAL_FLAG;
 
 
 public class DBActivity extends BaseActivity {

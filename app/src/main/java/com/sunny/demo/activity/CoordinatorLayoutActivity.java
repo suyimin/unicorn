@@ -3,7 +3,7 @@ package com.sunny.demo.activity;
 
 import android.os.Bundle;
 
-import com.sunny.library.activity.BaseActivity;
+import com.xdroid.library.activity.BaseActivity;
 import com.sunny.demo.R;
 
 /**

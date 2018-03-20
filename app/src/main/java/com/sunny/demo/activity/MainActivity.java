@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.sunny.library.activity.BaseActivity;
+import com.xdroid.library.activity.BaseActivity;
 import com.sunny.demo.R;
 import com.xdroid.activity.AppActivityManager;
 

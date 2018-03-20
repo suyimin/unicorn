@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.sunny.library.activity.BaseActivity;
+import com.xdroid.library.activity.BaseActivity;
 import com.sunny.demo.R;
 import com.sunny.demo.adapter.ItemAdapter;
 import com.sunny.demo.bean.AsRole;
