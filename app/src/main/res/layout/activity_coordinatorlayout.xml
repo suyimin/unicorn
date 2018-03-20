@@ -12,9 +12,9 @@
         android:layout_marginTop="300dp"
         android:background="#FFCC00"
         android:text="Hello"
-        app:layout_behavior="com.sunny.demo.coordinator.MyBehavior" />
+        app:layout_behavior="com.xdroid.demo.coordinator.MyBehavior" />
 
-    <com.sunny.demo.coordinator.TempView
+    <com.xdroid.demo.coordinator.TempView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="300dp"
