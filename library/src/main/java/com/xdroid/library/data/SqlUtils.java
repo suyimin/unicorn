@@ -13,10 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * create: 2016/11/1 09:10
- * author：linqj
- * function description:
- *                     数据库操作
+ * 数据库操作
  */
 public class SqlUtils {
     /**

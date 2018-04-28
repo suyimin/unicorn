@@ -1,10 +1,5 @@
 package com.xdroid.demo.bean;
 
-/**
- * create: 2016/12/29 09:43
- * author：linqj
- * function description:
- */
 
 public class HandlerBean {
 

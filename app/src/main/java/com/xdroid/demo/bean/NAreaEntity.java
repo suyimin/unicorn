@@ -1,12 +1,8 @@
 package com.xdroid.demo.bean;
 
 /**
- * create: 2016/12/29 09:39
- * author：linqj
- * function description:
- *     城市表
+ * 商圈表
  */
-
 public class NAreaEntity {
 
     private String id;

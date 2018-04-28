@@ -5,12 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/**
- * create: 2016/12/29 10:17
- * author：linqj
- * function description:
- */
-
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "DBHelper";
@@ -39,6 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     // 当第一次创建数据库的时候，调用该方法
+    @Override
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(CAREATE_CAREA_TABLE_SQL);
@@ -49,6 +44,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //当更新数据库的时候执行该方法
+    @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //输出更新数据库的日志信息
         Log.i(TAG, "update Database------------->");

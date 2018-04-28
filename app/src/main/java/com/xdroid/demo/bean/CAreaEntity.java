@@ -3,12 +3,8 @@ package com.xdroid.demo.bean;
 import java.util.List;
 
 /**
- * create: 2016/12/29 09:39
- * author：linqj
- * function description:
- *     城市表
+ * 城市表
  */
-
 public class CAreaEntity {
 
     private String areaCode;
